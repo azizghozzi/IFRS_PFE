@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Models
 {
-    internal class ContactLocationHistory
+    internal class ContractLocationHistory
     {
         public int idContractLocationHistory { get; set; }
         public DateTime UpdateDate { get; set; }
