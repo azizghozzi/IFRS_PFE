@@ -21,6 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infra.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanAarchitecture.Application", "CleanAarchitecture.Application\CleanAarchitecture.Application.csproj", "{034BF11F-25A2-45AF-BADF-0370E71683FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{8AE0F11B-A9DB-4D18-834B-B945C38C78B2}"
+	ProjectSection(SolutionItems) = preProject
+		CleanAarchitecture.Application\Interfaces\IAccountReposetory.cs = CleanAarchitecture.Application\Interfaces\IAccountReposetory.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +57,7 @@ Global
 		{F78E24A7-76EF-4F1D-878F-647BE3D430AE} = {7980DC7E-E986-44DE-AD81-EA7B9CC5BA5F}
 		{3F43AF5D-FE9F-472E-AADA-5C9742EE8CD9} = {4308F5BA-2FD2-46A8-B463-516AA9B70D2D}
 		{034BF11F-25A2-45AF-BADF-0370E71683FA} = {493F558A-1F67-4AFD-8C32-F8373FF66D16}
+		{8AE0F11B-A9DB-4D18-834B-B945C38C78B2} = {7980DC7E-E986-44DE-AD81-EA7B9CC5BA5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {642ACD63-ECAF-47A9-8698-DC39D6541C09}

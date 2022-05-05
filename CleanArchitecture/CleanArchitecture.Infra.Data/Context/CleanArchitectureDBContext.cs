@@ -14,7 +14,7 @@ namespace CleanArchitecture.Infra.Data.Context
             }
         public DbSet<Account> Accounts { get; set; }
        // public DbSet<ContractLocation> ContractLocations { get; set; }
-        public DbSet<EchanceContractLocation> EchanceContracts { get; set; }
+       // public DbSet<EchanceContractLocation> EchanceContracts { get; set; }
         //public DbSet<EchanceContratLocationHistory> echanceContratLocationHistories { get; set;}
         //public DbSet<Tenant>tenants { get; set; }
        

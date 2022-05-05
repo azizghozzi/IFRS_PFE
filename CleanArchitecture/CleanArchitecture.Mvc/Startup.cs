@@ -38,7 +38,7 @@ namespace CleanArchitecture.Mvc
             services.AddDbContext<CleanArchitectureDBContext>(options =>
             {
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("CleanAarchitectureDBConnection"));
+                    Configuration.GetConnectionString("CleanArchitectureDBConnection"));
             });
             services.AddMvc();
             services.AddControllersWithViews();
