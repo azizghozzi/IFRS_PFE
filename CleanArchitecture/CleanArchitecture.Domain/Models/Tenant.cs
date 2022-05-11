@@ -4,9 +4,10 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Models
 {
-    internal class Tenant
+    public class Tenant
     {
-        public int Id { get; set; }
+        public int TenantId { get; set; }
         public string Name { get; set; }
+        public virtual ICollection<Account> Accounts { get; set; }
     }
 }

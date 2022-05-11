@@ -7,6 +7,7 @@ namespace CleanAarchitecture.Application.Interfaces
 {
     public interface IAccountService
     {
-        IEnumerable<accountViewModel> Getaccounts { get; set; }
+        accountViewModel Getaccounts();
     }
 }
+ 

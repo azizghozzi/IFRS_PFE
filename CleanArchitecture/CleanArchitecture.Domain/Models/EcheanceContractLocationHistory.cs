@@ -1,23 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CleanArchitecture.Domain.Models
 {
-    internal class EcheanceContractLocationHistory
+    public class EcheanceContractLocationHistory
     {
-        public int id { get; set; }
+        public int EcheanceContractLocationHistoryid { get; set; }
         public DateTime PayementDate { get; set; }
 
         public int CumulativeMonths { get; set; }
-        public int Leasepayment { get; set; }
-        public int PresentValue { get; set; }
-        public int NetDebtInitialValue { get; set; }
-        public string AnnualInterest { get; set; }
-        public int CapitalRepayment { get; set; }
-        public int NetDebtEndingValue { get; set; }
-        public string YearlyDepreciationAmount { get; set; }
-        public string Accumulated_Depreciation { get; set; }
-        public string CarryingAmount { get; set; }
+        [Display(Name = "Leasepayment")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Leasepayment { get; set; }
+        [Display(Name = "PresentValue")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal PresentValue { get; set; }
+        [Display(Name = "NetDebtInitialValue")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal NetDebtInitialValue { get; set; }
+        [Display(Name = "AnnualInterest")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal AnnualInterest { get; set; }
+        [Display(Name = "CapitalRepayment")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal CapitalRepayment { get; set; }
+        [Display(Name = "NetDebtEndingValue")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal NetDebtEndingValue { get; set; }
+        [Display(Name = "YearlyDepreciationAmount")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal YearlyDepreciationAmount { get; set; }
+        [Display(Name = "Accumulated_Depreciation")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Accumulated_Depreciation { get; set; }
+        [Display(Name = "CarryingAmount")]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal CarryingAmount { get; set; }
+
+        public virtual ICollection<ContractLocationHistory> ContractLocationsHistory { get; set; }
     }
 }

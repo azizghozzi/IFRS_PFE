@@ -7,6 +7,8 @@ namespace CleanAarchitecture.Application.ViewModels
 {
     public class accountViewModel
     {
-        public IEnumerable<Account> aaccounts { get; set; }
+        internal object Account;
+
+        public IEnumerable<Account> accounts { get; set; }
     }
 }

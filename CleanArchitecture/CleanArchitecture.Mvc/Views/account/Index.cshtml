@@ -1,0 +1,19 @@
+﻿@model CleanAarchitecture.Application.ViewModels.accountViewModel
+
+<div class ="container body-content">
+    <div class ="row account-content">
+        @foreach (var account in Model.accounts)
+       {
+           <div class="account-images-container">
+               <div class="account-image"style ="background-image:url(@account)"> 
+
+
+                   </div>
+
+
+                   <span>@account</span>
+               </div>
+           
+       }
+    </div>s
+</div>

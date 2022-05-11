@@ -4,10 +4,13 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Models
 {
-    internal class RenewalOption
+    public class RenewalOption
     {
-        public int  Id { get; set ;}
-    public string description { get; set; }
+        public int RenewalOptionId { get; set ;}
+        public string description { get; set; }
         public int value { get; set; }
+
+        public virtual ContractLocation ContractLocation { get; set; }
+        public virtual ContractLocationHistory ContractLocationHistory { get; set; }
     }
 }
